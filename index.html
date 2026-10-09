@@ -6,6 +6,9 @@
 <title>Awurama Ofori-Kwafo, PhD Candidate</title>
 <meta name="description" content="Awurama Ofori-Kwafo is a PhD candidate in Biomedical Engineering at the University of Toledo, building microfluidic microphysiological systems.">
 <meta name="author" content="Awurama Ofori-Kwafo">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Awurama Ofori-Kwafo, PhD Candidate">
+<meta property="og:description" content="Translational research, microphysiological systems, and cellular interactions. CV, publications, teaching, and outreach.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,500&family=Inter:wght@400;500;600;700&display=swap">
 <style>
@@ -183,6 +186,40 @@
 
   .hero-deco{position:absolute; right:0; top:0; bottom:0; width:280px; opacity:0.16; pointer-events:none;}
   .hero{position:relative; overflow:hidden;}
+
+  .hl-grid{display:grid; grid-template-columns:1.25fr 0.75fr; gap:16px;}
+  @media (max-width:700px){.hl-grid{grid-template-columns:1fr;}}
+  .hl-card{background:var(--card); border:1px solid var(--line); border-top:3px solid var(--gold); border-radius:0 0 6px 6px; padding:20px 22px;}
+  .hl-card .kicker{font-size:11.5px; font-weight:700; letter-spacing:0.03em; color:var(--gold); text-transform:uppercase; margin-bottom:8px;}
+  .hl-card h3{font-size:16.5px; font-weight:600; line-height:1.35;}
+  .hl-card p{font-size:14px; margin-top:8px;}
+  .hl-card .more{display:inline-block; margin-top:12px; font-size:13px; font-weight:600; text-decoration:none; border-bottom:1px solid var(--line);}
+  .hl-stats{display:flex; flex-wrap:wrap; gap:8px 20px; margin-top:12px;}
+  .hl-stats div{font-size:13px; color:var(--ink-soft);}
+  .hl-stats b{font-family:"Source Serif 4", serif; font-size:20px; color:var(--navy); display:block; line-height:1.1;}
+
+  @media (max-width:640px){nav{position:static;}}
+
+  .hero-meta a{display:inline-block; padding:7px 13px; border:1px solid rgba(220,227,237,0.4); border-radius:4px; line-height:1.2; font-weight:600; letter-spacing:0.01em;}
+  @media (max-width:640px){
+    nav .brand{display:none;}
+    nav .wrap{padding:6px 18px;}
+    nav ul{gap:4px 18px;}
+    nav li:nth-child(1), nav li:nth-child(n+5):nth-child(-n+8){display:none;}
+    nav a{display:inline-block; padding:10px 0; font-size:14px;}
+    .hero .wrap{padding:22px 18px 26px; gap:14px; align-items:flex-start;}
+    .hero-photo{width:84px; height:84px;}
+    .hero-text{min-width:0; width:100%;}
+    .hero-text .eyebrow{font-size:12.5px; margin-bottom:4px;}
+    .hero-text h1{font-size:28px;}
+    .hero-text .lede{font-size:14.5px; margin-top:10px; line-height:1.5;}
+    .hero-meta{margin-top:12px; gap:8px; font-size:12.5px;}
+    .hero-meta a{padding:10px 14px; min-height:40px;}
+    .hero-cta{margin-top:16px; gap:8px;}
+    .btn{padding:11px 15px; font-size:13px;}
+    #highlights{padding-top:26px;}
+    .hl-card{padding:18px;}
+  }
 </style>
 </head>
 <body>
@@ -230,9 +267,13 @@
       <div class="hero-meta">
         <span>University of Toledo</span>
         <span>Toledo, OH</span>
+        <a href="https://orcid.org/0000-0001-6131-3316">ORCID</a>
+        <a href="https://www.linkedin.com/in/awurama-ofori-kwafo">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=dd3BH1kAAAAJ&amp;hl=en">Google Scholar</a>
       </div>
       <div class="hero-cta">
-        <a class="btn primary" href="#publications">View publications</a>
+        <a class="btn primary" href="Awurama_Ofori-Kwafo_CV.pdf" download>Download CV (PDF)</a>
+        <a class="btn ghost" href="#publications">View publications</a>
         <a class="btn ghost" href="#contact">Get in touch</a>
       </div>
     </div>
@@ -241,11 +282,35 @@
 
 <main>
 
+<section id="highlights" style="padding-bottom:12px;">
+  <div class="wrap">
+    <div class="hl-grid">
+      <div class="hl-card">
+        <div class="kicker">Recent finding &middot; 2026</div>
+        <h3>Butyrate activates sensory neurons through colonic serotonin release</h3>
+        <p>Using a microfluidic co-culture model and real-time imaging, we identified a signaling pathway through which the microbial metabolite butyrate activates sensory neurons. Butyrate stimulates colonic epithelial cells via GPR41 and GPR43 to release serotonin, which engages 5-HT3a receptors on sensory neurons and elicits calcium influx, a marker of neuronal activation.</p>
+        <a class="more" href="https://journals.physiology.org/doi/abs/10.1152/ajpgi.00014.2026">Read the paper in AJP-GI</a>
+      </div>
+      <div class="hl-card">
+        <div class="kicker">Teaching</div>
+        <h3>Graduate Teaching Assistant, University of Toledo</h3>
+        <p>Teaching assistant for BIOE 3500 (Bioprocessing Laboratory) and BIOE 4140 (Bioinstrumentation Laboratory) since 2021, and BIOE 1410 (Freshman Design Innovation) in 2025 and 2026.</p>
+        <div class="hl-stats">
+          <div><b>100+</b>students instructed</div>
+          <div><b>20 to 30</b>per semester</div>
+        </div>
+        <a class="more" href="#teaching">See teaching experience</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <section id="about">
   <div class="wrap">
     <div class="section-head"><span class="num">01</span><h2>Research profile</h2><div class="rule"></div></div>
-    <p class="lead">I am a doctoral candidate in Biomedical Engineering at the University of Toledo whose research centers on translational studies of cellular interactions using microphysiological systems. My work integrates microfluidic engineering, primary cell culture, and quantitative functional assays to examine how cell populations communicate under controlled, physiologically relevant conditions.</p>
-    <p class="lead" style="margin-top:14px;">My research has resulted in four peer-reviewed publications, including two first-author papers, and presentations at national scientific meetings. I am also committed to teaching, mentorship, and STEM outreach.</p>
+    <p class="lead">I am a doctoral candidate in Biomedical Engineering at the University of Toledo. My research applies microphysiological systems to the study of cellular interactions, with a translational focus. I integrate microfluidic engineering, primary cell culture, and quantitative functional assays to examine how cell populations communicate under controlled, physiologically relevant conditions.</p>
+    <p class="lead" style="margin-top:14px;">My work has resulted in four peer-reviewed publications, two as first author, and presentations at national scientific meetings. I am also committed to teaching, mentorship, and STEM outreach.</p>
   </div>
 </section>
 
@@ -255,13 +320,18 @@
     <div class="grid-2">
       <div class="card">
         <h3>Doctor of Philosophy (PhD), Biomedical Engineering</h3>
-        <div class="org">University of Toledo, Toledo, Ohio</div>
-        <div class="dates">January 2021 &ndash; Present</div>
+        <div class="org">University of Toledo, Toledo, Ohio &middot; Advisor: Dr. Yuan Tang</div>
+        <div class="dates">January 2021 to Present</div>
       </div>
       <div class="card">
         <h3>M.S. in Bioengineering</h3>
         <div class="org">University of Toledo, Toledo, Ohio</div>
         <div class="dates">August 2026</div>
+      </div>
+      <div class="card">
+        <h3>Bachelor of Science (B.Sc.), Biomedical Engineering</h3>
+        <div class="org">Kwame Nkrumah University of Science and Technology, Kumasi, Ghana</div>
+        <div class="dates">2017</div>
       </div>
     </div>
   </div>
@@ -272,23 +342,23 @@
     <div class="section-head"><span class="num">03</span><h2>Research experience</h2><div class="rule"></div></div>
     <div class="entry">
       <div class="entry-head">
-        <h3>Graduate Research Assistant, Department of Biomedical Engineering</h3>
-        <div class="dates">January 2021 &ndash; Present</div>
+        <h3>Graduate Research Assistant, Department of Bioengineering</h3>
+        <div class="dates">January 2021 to Present</div>
       </div>
       <div class="org">University of Toledo, Biofluidics Lab, Toledo, Ohio</div>
       <ul>
-        <li>Built a tri-culture microfluidic model of the gut-brain axis. It combines gut microbes, epithelial cells, and sensory neurons on one chip. I ran and maintained over 200 microfluidic devices.</li>
-        <li>Cultured four or more cell types, including colonic epithelial cells, sensory neurons, endothelial cells, and cancer cell lines. I adapted each protocol for standard and microfluidic platforms.</li>
-        <li>Designed co-culture experiments to model real tissue environments. This gave reliable data for mechanistic studies.</li>
-        <li>Measured barrier integrity and neuron activity. I used permeability assays, tight junction staining, and live calcium imaging.</li>
-        <li>Used immunofluorescence to study protein expression and cell structure across my models.</li>
-        <li>Analyzed images at the single-cell level to study cell shape, barrier strength, and neuron activity. This work supported three publications.</li>
-        <li>Developed a transfection method for epithelial cells inside a microfluidic device, then confirmed it worked using fluorescence imaging.</li>
-        <li>Ran cytokine and ELISA assays to measure inflammation signals in co-culture systems.</li>
-        <li>Ran viability and dose-response assays to test how cells respond to different compounds.</li>
-        <li>Kept long-term cultures running under steady flow and dosing conditions, so results stayed consistent over many weeks.</li>
-        <li>Built a blood-brain barrier model as a second research platform for the lab.</li>
-        <li>Mentored students in device operation, cell culture, imaging, and experimental design.</li>
+        <li>Engineered a tri-culture microfluidic model of the gut-brain axis that integrates gut microbes, epithelial cells, and sensory neurons, enabling real-time study of host-microbiome signaling. Operated and maintained more than 200 microfluidic devices.</li>
+        <li>Maintained four or more primary and established cell types, including colonic epithelial cells, sensory neurons, endothelial cells, and cancer cell lines, and adapted protocols across standard and microfluidic platforms.</li>
+        <li>Designed co-culture experiments that reproduce physiological tissue microenvironments and generate reproducible data for mechanistic studies.</li>
+        <li>Quantified epithelial barrier integrity and neuronal excitability using permeability assays, tight junction characterization, and real-time calcium imaging with single-cell analysis.</li>
+        <li>Characterized protein and gene expression across multi-cell-type models using immunofluorescence, Western blot, PCR and qPCR, and RNA extraction.</li>
+        <li>Applied quantitative image analysis at single-cell resolution to assess cell morphology, barrier integrity, and neuronal activity, contributing data to four peer-reviewed publications.</li>
+        <li>Developed and validated a transfection protocol for primary colonic epithelial cells within a microfluidic device, confirming expression by fluorescence imaging.</li>
+        <li>Performed cytokine profiling and ELISA to quantify inflammatory mediator secretion in co-culture systems under pharmacological stimulation.</li>
+        <li>Conducted reactive oxygen species, cell viability, and dose-response assays to characterize compound activity in microfluidic models.</li>
+        <li>Maintained long-term perfusion cultures under defined flow and dosing conditions, ensuring reproducibility across multi-week studies.</li>
+        <li>Developed a blood-brain barrier model incorporating brain microvascular endothelial cells and pericytes as a secondary research platform for the laboratory.</li>
+        <li>Mentored undergraduate and graduate students in device operation, cell culture, imaging, and experimental design.</li>
       </ul>
     </div>
   </div>
@@ -300,27 +370,35 @@
     <div class="entry">
       <div class="entry-head">
         <h3>Graduate Teaching Assistant, College of Engineering</h3>
-        <div class="dates">January 2021 &ndash; Present</div>
+        <div class="dates">January 2021 to Present</div>
       </div>
-      <div class="org">University of Toledo, Department of Bioengineering &middot; 4&ndash;5 semesters across two laboratory courses &middot; 100+ undergraduate students instructed</div>
+      <div class="org">University of Toledo, Department of Bioengineering &middot; 4 to 5 semesters across multiple courses, including two laboratory courses &middot; 100+ undergraduate students instructed</div>
 
       <div class="course">
-        <h4>BIOE 3500 &mdash; Bioprocessing Laboratory</h4>
+        <h4>BIOE 3500: Bioprocessing Laboratory</h4>
         <ul>
-          <li>Taught 20 to 30 students per semester. Labs covered protein purification, bacterial transformation, gel electrophoresis, and protein expression.</li>
-          <li>Supervised cell lysis, protein purification, and protein quantification. I adjusted instruction to each student's skill level.</li>
-          <li>Graded lab reports and gave feedback on data and writing.</li>
-          <li>Enforced lab safety and aseptic technique in every session.</li>
+          <li>Instructed 20 to 30 undergraduates per semester in recombinant protein production, including bacterial transformation, plasmid isolation, protein expression and purification, gel electrophoresis, and SDS-PAGE.</li>
+          <li>Demonstrated and supervised cell lysis, affinity chromatography, and protein quantification, adapting instruction to students' varying skill levels.</li>
+          <li>Evaluated laboratory reports and assignments with written feedback on data interpretation, scientific rigor, and technical writing.</li>
+          <li>Enforced laboratory safety protocols and aseptic technique in every session.</li>
         </ul>
       </div>
 
       <div class="course">
-        <h4>BIOE 4140 &mdash; Bioinstrumentation Laboratory</h4>
+        <h4>BIOE 4140: Bioinstrumentation Laboratory</h4>
         <ul>
-          <li>Led labs for 20 to 30 students per semester. Students designed and built ECG circuits from scratch.</li>
-          <li>Helped students troubleshoot circuits and read signals on oscilloscopes and DAQ tools.</li>
-          <li>Graded lab reports and gave feedback on technical accuracy.</li>
-          <li>Held office hours to support students. This led to my nomination for the 2025 Outstanding Teaching Assistant Award.</li>
+          <li>Led laboratory sessions for 20 to 30 students per semester in the design, construction, and testing of ECG circuits.</li>
+          <li>Provided troubleshooting support for circuit design and guided signal interpretation using oscilloscopes and data acquisition tools.</li>
+          <li>Evaluated laboratory reports and assignments with feedback on technical accuracy and data presentation.</li>
+          <li>Held regular office hours to provide individualized academic support, which contributed to my receiving the 2025 Outstanding Teaching Assistant Award.</li>
+        </ul>
+      </div>
+
+      <div class="course">
+        <h4>BIOE 1410: Freshman Design Innovation (Fall 2025 and Spring 2026)</h4>
+        <ul>
+          <li>Supported first-year students in their first engineering experience, guiding project ideation, design, and development and helping teams resolve technical and conceptual challenges.</li>
+          <li>Several students from the course are now pursuing patents for projects that originated in it, including one team whose project the University of Toledo Tech Transfer Office has agreed to pursue through a provisional patent.</li>
         </ul>
       </div>
     </div>
@@ -335,6 +413,16 @@
     <div class="pub">
       <div class="idx">1</div>
       <div>
+        <h3>Butyrate triggers neuronal signaling via release of colonic serotonin in a microfluidic model of gut-brain axis</h3>
+        <div class="authors">Ofori-Kwafo, A., Sree Kumar, H., Otmanowski, E.B., Al Mamun, E., Habibic-Beskovic, A., Li, Q., Zubcevic, J., &amp; Tang, Y. (2026)</div>
+        <div class="venue">American Journal of Physiology-Gastrointestinal and Liver Physiology</div>
+        <div class="note">First author &middot; online ahead of print</div>
+        <a href="https://journals.physiology.org/doi/abs/10.1152/ajpgi.00014.2026">DOI: 10.1152/ajpgi.00014.2026</a>
+      </div>
+    </div>
+    <div class="pub">
+      <div class="idx">2</div>
+      <div>
         <h3>Gut-on-a-chip platforms: Bridging in vitro and in vivo models for advanced gastrointestinal research</h3>
         <div class="authors">Ofori-Kwafo, A., Sigdel, I., Al Mamun, E., Zubcevic, J., &amp; Tang, Y. (2025)</div>
         <div class="venue">Physiological Reports, 13, e70356</div>
@@ -343,7 +431,7 @@
       </div>
     </div>
     <div class="pub">
-      <div class="idx">2</div>
+      <div class="idx">3</div>
       <div>
         <h3>Protein Kinase C-Delta (PKC&delta;) inhibition stabilizes endothelium and suppresses triple-negative breast cancer (TNBC) intravasation in a microfluidic hypoxic tumor model</h3>
         <div class="authors">Sigdel, I., Ofori-Kwafo, A., Al Mamun, E., Tiwari, A.K., &amp; Tang, Y. (2025)</div>
@@ -352,23 +440,12 @@
       </div>
     </div>
     <div class="pub">
-      <div class="idx">3</div>
+      <div class="idx">4</div>
       <div>
         <h3>Biomimetic on-chip assay reveals the anti-metastatic potential of a novel thienopyrimidine compound in triple-negative breast cancer cell lines</h3>
         <div class="authors">Sigdel, I., Ofori-Kwafo, A., Heizelman, R.J. III, Nestor-Kalinoski, A., Prabhakarpandian, B., Tiwari, A.K., &amp; Tang, Y. (2023)</div>
         <div class="venue">Frontiers in Bioengineering and Biotechnology, 11, 1227119</div>
         <a href="https://doi.org/10.3389/fbioe.2023.1227119">DOI: 10.3389/fbioe.2023.1227119</a>
-      </div>
-    </div>
-
-    <div class="pub">
-      <div class="idx">4</div>
-      <div>
-        <h3>Butyrate triggers neuronal signaling via release of colonic serotonin in a microfluidic model of gut-brain axis</h3>
-        <div class="authors">Ofori-Kwafo, A., Sree Kumar, H., Otmanowski, E.B., et al. (2026)</div>
-        <div class="venue">American Journal of Physiology-Gastrointestinal and Liver Physiology</div>
-        <div class="note">First author &middot; online ahead of print</div>
-        <a href="https://journals.physiology.org/doi/abs/10.1152/ajpgi.00014.2026">DOI: 10.1152/ajpgi.00014.2026</a>
       </div>
     </div>
   </div>
@@ -384,14 +461,14 @@
         <div class="year">2026</div>
         <div>
           <p>Ofori-Kwafo, A., Sree Kumar, H., Al Mamun, E., Zubcevic, J., &amp; Tang, Y. A Gut-on-a-Chip Model of the Gut-Brain Axis Reveals Butyrate-Driven Serotonergic Epithelial-Neuronal Signaling.</p>
-          <div class="venue">Biomedical Engineering Society (BMES) Annual Meeting, Orlando, Florida, October 21&ndash;24, 2026</div>
+          <div class="venue">Biomedical Engineering Society (BMES) Annual Meeting, Orlando, Florida, October 21 to 24, 2026 (upcoming)</div>
         </div>
       </div>
       <div class="pres">
         <div class="year">2023</div>
         <div>
           <p>Ofori-Kwafo, A., Sigdel, I., Khalaf, K., Zubcevic, J., &amp; Tang, Y. Simulating the Effect of the Gut Microbiome on the Gut-Brain Axis on a Chip.</p>
-          <div class="venue">Biomedical Engineering Society (BMES) Annual Meeting, Seattle, Washington, October 11&ndash;14, 2023</div>
+          <div class="venue">Biomedical Engineering Society (BMES) Annual Meeting, Seattle, Washington, October 11 to 14, 2023</div>
         </div>
       </div>
     </div>
@@ -402,7 +479,7 @@
         <div class="year">2026</div>
         <div>
           <p>Ofori-Kwafo, A., Sree Kumar, H., Al Mamun, E., Habibic-Beskovic, A., Li, Q., Zubcevic, J., &amp; Tang, Y. Microbial Metabolite Butyrate Activates Sensory Neurons through Colonic Serotonin Release in a Microfluidic Co-Culture Model.</p>
-          <div class="venue">American Physiological Society (APS) Annual Meeting, Minneapolis, Minnesota, April 23&ndash;26, 2026</div>
+          <div class="venue">American Physiological Society (APS) Annual Meeting, Minneapolis, Minnesota, April 23 to 26, 2026</div>
           <div class="venue"><a href="https://journals.physiology.org/doi/abs/10.1152/physiol.2026.41.S1.2298214" style="text-decoration:none; border-bottom:1px solid var(--line);">View abstract in Physiology</a></div>
         </div>
       </div>
@@ -417,7 +494,14 @@
         <div class="year">2022</div>
         <div>
           <p>Ofori-Kwafo, A., Sigdel, I., Heizelman, R.J. III, &amp; Tang, Y. Quantifying Breast Cancer Intravasation, Extravasation and Angiogenesis Using High Throughput Assays.</p>
-          <div class="venue">Biomedical Engineering Society (BMES) Annual Meeting, San Antonio, Texas, October 12&ndash;15, 2022</div>
+          <div class="venue">Biomedical Engineering Society (BMES) Annual Meeting, San Antonio, Texas, October 12 to 15, 2022</div>
+        </div>
+      </div>
+      <div class="pres">
+        <div class="year">2021</div>
+        <div>
+          <p>Tang, Y., Sigdel, I., Faizee, F., Ofori-Kwafo, A., &amp; Tiwari, A.K. Preventing Breast Cancer Metastasis by Attenuating Chemotherapy-Induced Endothelial Inflammation.</p>
+          <div class="venue">Biomedical Engineering Society (BMES) Annual Meeting, Orlando, Florida, October 6 to 9, 2021</div>
         </div>
       </div>
     </div>
@@ -430,13 +514,29 @@
     <div class="entry">
       <div class="entry-head">
         <h3>Graduate Research Mentor</h3>
-        <div class="dates">2021 &ndash; Present</div>
+        <div class="dates">2021 to Present</div>
       </div>
       <div class="org">Biofluidics Lab, Department of Bioengineering, University of Toledo</div>
       <ul>
-        <li>Mentored four undergraduates in device operation, cell culture, and imaging, so they could run their own experiments.</li>
-        <li>Trained two graduate students on the tri-culture model and its workflows.</li>
-        <li>Guided about five high school students through summer lab visits.</li>
+        <li>Mentored four undergraduate students in microfluidic device operation, primary cell culture, fluorescence imaging, and experimental design, enabling independent contributions to ongoing projects.</li>
+        <li>Trained two graduate students in tri-culture model setup, cell seeding, and experimental workflows.</li>
+        <li>Guided approximately five high school students during summer laboratory visits, providing hands-on exposure to microfluidic research and biomedical engineering career pathways.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="service">
+  <div class="wrap">
+    <div class="section-head"><span class="num">08</span><h2>Professional service</h2><div class="rule"></div></div>
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Peer Review Assistance</h3>
+        <div class="dates">2023 to Present</div>
+      </div>
+      <div class="org">Advanced Biology (Wiley); Biotechnology and Bioengineering (Wiley)</div>
+      <ul>
+        <li>Assisted with manuscript peer review.</li>
       </ul>
     </div>
   </div>
@@ -444,17 +544,17 @@
 
 <section id="honors">
   <div class="wrap">
-    <div class="section-head"><span class="num">08</span><h2>Awards &amp; honors</h2><div class="rule"></div></div>
+    <div class="section-head"><span class="num">09</span><h2>Awards &amp; honors</h2><div class="rule"></div></div>
     <div class="grid-2">
       <div class="honor">
         <h3>Outstanding Teaching Assistant Award</h3>
         <div class="dates">2025</div>
-        <p>College of Engineering, University of Toledo. Selected through combined student evaluation and faculty nomination across the College of Engineering.</p>
+        <p>College of Engineering, University of Toledo. Selected through combined student evaluation and faculty nomination.</p>
       </div>
       <div class="honor">
-        <h3>Advanced Leadership Academy &mdash; Nominated Participant</h3>
+        <h3>Advanced Leadership Academy, Nominated Participant</h3>
         <div class="dates">Spring 2023</div>
-        <p>ProMedica and the College of Business, University of Toledo. Cohort-based program in inclusive leadership, community development, and professional growth, selected by nomination.</p>
+        <p>ProMedica and the College of Business, University of Toledo. Nominated cohort program in inclusive leadership, community development, and professional growth.</p>
       </div>
     </div>
   </div>
@@ -462,43 +562,70 @@
 
 <section id="outreach">
   <div class="wrap">
-    <div class="section-head"><span class="num">09</span><h2>Outreach &amp; volunteer activities</h2><div class="rule"></div></div>
+    <div class="section-head"><span class="num">10</span><h2>Outreach &amp; volunteer activities</h2><div class="rule"></div></div>
 
     <div class="entry">
       <div class="entry-head">
-        <h3>Engineer For a Day &mdash; STEM Outreach Presenter</h3>
-        <div class="dates">February 2023, February 2024</div>
+        <h3>University of Toledo Engineering Summer Camp, Bioengineering Lab Session Instructor</h3>
+        <div class="dates">July 2026</div>
       </div>
-      <div class="org">University of Toledo</div>
+      <div class="org">University of Toledo, College of Engineering</div>
       <ul>
-        <li>Gave 20-minute talks on microphysiological systems research to groups of 20 to 25 high school students and teachers.</li>
-        <li>Represented the Biofluidics Lab at this event for two years in a row.</li>
+        <li>Co-led the bioengineering laboratory session with Dr. Kelly Marbaugh for high school students from Ohio, Michigan, and Indiana.</li>
+        <li>Guided students through alginate synthesis to demonstrate how material design influences drug delivery.</li>
+        <li>Featured in Toledo Blade coverage of the camp as a graduate researcher and science communicator.</li>
       </ul>
     </div>
 
     <div class="entry">
       <div class="entry-head">
-        <h3>Girl Day &mdash; Event Coordinator</h3>
+        <h3>Engineer For a Day, Middle School Outreach Instructor</h3>
+        <div class="dates">March 2026</div>
+      </div>
+      <div class="org">University of Toledo</div>
+      <ul>
+        <li>Led a hands-on alginate activity in which students used syringes to design their own beads, varying size, shape, and color.</li>
+        <li>Connected the activity to biomedical engineering by explaining how alginate is used to study controlled drug delivery, including molecular diffusion and release over time.</li>
+        <li>Fostered student curiosity and translated biomedical engineering concepts for young, non-specialist audiences.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Girl Day, Event Coordinator</h3>
         <div class="dates">March 2025</div>
       </div>
       <div class="org">University of Toledo</div>
       <ul>
-        <li>Coordinated student group logistics across multiple campus locations for a university-wide STEM outreach event targeting girls in K-12 education.</li>
-        <li>Managed student group transitions, scheduling, and activity coordination throughout the event.</li>
+        <li>Coordinated student group logistics across multiple campus locations for a university-wide STEM outreach event for girls in K-12 education.</li>
+        <li>Managed group transitions, scheduling, and activity coordination throughout the event.</li>
       </ul>
     </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Engineer For a Day, STEM Outreach Presenter</h3>
+        <div class="dates">February 2023, February 2024</div>
+      </div>
+      <div class="org">University of Toledo</div>
+      <ul>
+        <li>Delivered 20-minute presentations on microphysiological systems research to rotating groups of 20 to 25 high school students and teachers.</li>
+        <li>Represented the Biofluidics Lab at this annual event for two consecutive years.</li>
+      </ul>
+    </div>
+
   </div>
 </section>
 
 <section id="media">
   <div class="wrap">
-    <div class="section-head"><span class="num">10</span><h2>Media coverage &amp; public recognition</h2><div class="rule"></div></div>
+    <div class="section-head"><span class="num">11</span><h2>Media coverage &amp; public recognition</h2><div class="rule"></div></div>
 
     <div class="media-item">
       <span class="tag">Press</span>
       <div class="body">
         <p>Featured in &ldquo;Teens Disassemble Engines, Build Career Visions at UT Engineering Camp,&rdquo; <em>The Toledo Blade</em> (Toledo, Ohio), July 21, 2026.</p>
-        <p class="detail">Regional newspaper article covering University of Toledo engineering outreach, featuring her participation as a graduate researcher and science communicator.</p>
+        <p class="detail">Regional news coverage of University of Toledo engineering outreach, featuring Ofori-Kwafo as a graduate researcher and science communicator.</p>
         <a href="https://www.toledoblade.com/local/education/2026/07/21/teens-disassemble-engines-build-career-visions-ut-engineering-camp/stories/20260721082">Read the article</a>
       </div>
     </div>
@@ -507,7 +634,7 @@
       <span class="tag">Video</span>
       <div class="body">
         <p>Featured in the University of Toledo promotional commercial (2026).</p>
-        <p class="detail">Selected to represent the institution&rsquo;s graduate programs and research mission in an official promotional video.</p>
+        <p class="detail">Selected to represent the University&rsquo;s graduate programs and research mission in an official promotional video.</p>
         <a href="https://www.youtube.com/watch?v=kzFVCDq62uw">Watch the video</a>
       </div>
     </div>
@@ -516,7 +643,7 @@
 
 <section id="memberships">
   <div class="wrap">
-    <div class="section-head"><span class="num">11</span><h2>Professional memberships</h2><div class="rule"></div></div>
+    <div class="section-head"><span class="num">12</span><h2>Professional memberships</h2><div class="rule"></div></div>
     <div class="member-row">
       <div class="member">Biomedical Engineering Society (BMES)</div>
       <div class="member">American Physiological Society (APS)</div>
@@ -526,11 +653,11 @@
 
 <section id="skills">
   <div class="wrap">
-    <div class="section-head"><span class="num">12</span><h2>Technical skills &amp; expertise</h2><div class="rule"></div></div>
+    <div class="section-head"><span class="num">13</span><h2>Technical skills &amp; expertise</h2><div class="rule"></div></div>
 
     <div class="skill-block">
       <h4>Microfluidics &amp; microphysiological systems</h4>
-      <p>Organ-on-chip (OOC) design and operation; microphysiological systems (MPS); tri-culture microfluidic model development; gut-on-a-chip; blood-brain barrier model; commercial microfluidic device operation; high-throughput microfluidic assay execution; physiological microenvironment modeling; perfusion culture under defined shear stress.</p>
+      <p>Microphysiological system (MPS) design and operation; tri-culture microfluidic model development; intestinal microphysiological models; blood-brain barrier model; commercial microfluidic device operation; high-throughput microfluidic assay execution; physiological microenvironment modeling; perfusion culture under defined shear stress.</p>
     </div>
     <div class="skill-block">
       <h4>Cell biology &amp; primary cell culture</h4>
@@ -538,20 +665,22 @@
     </div>
     <div class="skill-block">
       <h4>Assays &amp; functional readouts</h4>
-      <p>Immunofluorescence; confocal z-stack microscopy; fluorescence microscopy; real-time Fluo-4 AM calcium imaging (single-cell ROI analysis); transepithelial permeability assays; ZO-1 tight junction characterization; barrier integrity assessment; competitive ELISA; cytokine profiling; MTT and CellTiter-Blue viability assays; ROS detection; IC50 dose-response pharmacological screening; receptor antagonist and kinase inhibitor studies; hypoxia/HIF modeling; spectrophotometric protein quantification.</p>
+      <p>Immunofluorescence; confocal z-stack microscopy; fluorescence microscopy; real-time Fluo-4 AM calcium imaging (single-cell ROI analysis); transepithelial permeability assays; ZO-1 tight junction characterization; barrier integrity assessment; competitive ELISA; cytokine profiling; Western blot; MTT and CellTiter-Blue viability assays; ROS detection; IC50 dose-response pharmacological screening; receptor antagonist and kinase inhibitor studies; hypoxia/HIF modeling; spectrophotometric protein quantification.</p>
     </div>
     <div class="skill-block">
-      <h4>Molecular biology (teaching laboratory proficiency)</h4>
-      <p>Recombinant protein expression (IPTG induction); Ni-NTA affinity chromatography; SDS-PAGE; agarose gel electrophoresis; bacterial transformation; plasmid DNA isolation; bioreactor fermentation; qPCR (instructional).</p>
+      <h4>Molecular biology</h4>
+      <p>PCR and qPCR; RNA extraction; Western blot; recombinant protein expression (IPTG induction); Ni-NTA affinity chromatography; SDS-PAGE; agarose gel electrophoresis; bacterial transformation; plasmid DNA isolation; bioreactor fermentation.</p>
     </div>
     <div class="skill-block">
       <h4>Software &amp; computational tools</h4>
       <div class="tag-row">
         <span class="tag">COMSOL Multiphysics (FEA)</span>
         <span class="tag">GraphPad Prism</span>
+        <span class="tag">ImageJ/FIJI</span>
         <span class="tag">MATLAB</span>
         <span class="tag">LabVIEW</span>
         <span class="tag">SolidWorks (CAD)</span>
+        <span class="tag">3D printing</span>
         <span class="tag">Python</span>
         <span class="tag">Microsoft Office Suite</span>
       </div>
@@ -561,8 +690,8 @@
 
 <section id="contact">
   <div class="wrap">
-    <div class="section-head"><span class="num">13</span><h2>Get in touch</h2><div class="rule"></div></div>
-    <p style="margin-bottom:20px;">I would love to hear from you. Fill out the form below and I will get back to you as soon as possible.</p>
+    <div class="section-head"><span class="num">14</span><h2>Get in touch</h2><div class="rule"></div></div>
+    <p style="margin-bottom:20px;">Please use the form below to get in touch, and I will respond as soon as possible.</p>
     <form id="contactForm" action="https://formspree.io/f/xvznrjga" method="POST" style="display:flex; flex-direction:column; gap:14px; max-width:480px;">
       <input type="text" name="name" placeholder="Your name" required style="font-family:inherit; font-size:14px; padding:11px 13px; border-radius:4px; border:1px solid var(--line); background:var(--card); color:var(--ink);">
       <input type="email" name="email" placeholder="Your email" required style="font-family:inherit; font-size:14px; padding:11px 13px; border-radius:4px; border:1px solid var(--line); background:var(--card); color:var(--ink);">
@@ -598,6 +727,7 @@
 <footer>
   <div class="fname">Awurama Ofori-Kwafo</div>
   <p>PhD Candidate, Biomedical Engineering &middot; University of Toledo</p>
+  <p style="margin-top:6px;"><a href="https://orcid.org/0000-0001-6131-3316">ORCID</a> &middot; <a href="https://www.linkedin.com/in/awurama-ofori-kwafo">LinkedIn</a> &middot; <a href="https://scholar.google.com/citations?user=dd3BH1kAAAAJ&amp;hl=en">Google Scholar</a> &middot; <a href="Awurama_Ofori-Kwafo_CV.pdf" download>Download CV</a></p>
 </footer>
 
 </body>
